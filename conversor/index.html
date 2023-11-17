@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/favicon.PNG">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/script.js"></script>
+    
+    
+    <title>Conversor de Números</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Conversor de Números Árabicos/Romanos</h1>
+    </header>
+    <div class="card-arabico-romano">
+        <section>
+            <h2 class="titulo">Arábico -> Romano</h2>
+            <div>
+                <label for="input-arabico">Digite um número Arábico:</label>
+                <input type="number" min="1" max="3999" id="input-arabico">
+                <button type="button" onclick="converterArabicoParaRomano()">Converter</button>
+                <span id="resultado-romano"></span>
+            </div>
+        </section>
+    </div>
+    <div class="card-romano-arabico">
+        <section>
+            <h2 class="titulo">Romano ->Arabico</h2>
+            <div>
+                <label for="input-romano">Digite um número Romano:</label>
+                <input type="text" id="input-romano">
+                <button type="button" onclick="converterRomanoParaArabico()">Converter</button>
+                <span id="resultado-arabico"></span>
+            </div>
+        </section>
+    </div>
+    <a href="https://www.numerosromanos.com.br/">
+        <button type="button">Verificar Resultado</button>
+    </a>
+</body>
+
+</html>
